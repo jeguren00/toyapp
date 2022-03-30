@@ -8,3 +8,6 @@
 
   <%= button_to "Destroy this user", @user, method: :delete %>
 </div>
+
+<h3>First micropost made by the user:</h3>
+<%= render @user.microposts.first %>
